@@ -36,7 +36,7 @@ public class Impreza {
 
     private BeerTypes pickRandomBeerType() {
         Random random = new Random();
-        int randomEnumIndex = random.nextInt(4);
+        int randomEnumIndex = random.nextInt(BeerTypes.values().length-1);
         return BeerTypes.values()[randomEnumIndex];
     }
 }
